@@ -1,0 +1,19 @@
+header {
+  margin-bottom: 90px;
+}
+
+nav {
+  position: fixed;
+  height: 75px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #1e9cd7;
+  background-color: white;
+}
+
+#logo {
+  height: 50px;
+  width: auto;
+  margin-left: 20px;
+}

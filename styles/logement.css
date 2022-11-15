@@ -1,0 +1,109 @@
+@import "./base.css";
+@import "./navbar.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+img {
+  max-width: 500px;
+}
+
+#logement-infos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.superhote,
+#prix {
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background: rgb(30, 156, 215);
+  background: linear-gradient(
+    90deg,
+    rgba(30, 156, 215, 1) 0%,
+    rgba(0, 91, 151, 1) 100%
+  );
+  width: fit-content;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+#prix {
+  text-align: center;
+  font-size: 24px;
+  width: 200px;
+}
+
+.note {
+  color: rgb(30, 156, 215);
+}
+
+h1 {
+  color: rgba(0, 91, 151, 1);
+}
+
+form {
+  position: relative;
+  min-height: 100px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 40px;
+}
+
+#submit-button {
+  position: absolute;
+  bottom: 0;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: transparent;
+  border: none;
+  background: rgb(30, 156, 215);
+  background: linear-gradient(
+    90deg,
+    rgba(30, 156, 215, 1) 0%,
+    rgba(0, 91, 151, 1) 100%
+  );
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+    main {
+        flex-direction: column;
+        width: fit-content;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    main {
+        max-width: 320px;
+    }
+    img {
+        max-width: 320px;
+    }
+}

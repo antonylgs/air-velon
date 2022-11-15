@@ -1,0 +1,65 @@
+@import "./base.css";
+@import "./navbar.css";
+
+body,
+form,
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+form,
+label {
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+label {
+  gap: 0;
+  margin-bottom: 0;
+}
+
+input,
+select,
+textarea {
+  text-align: center;
+  border-radius: 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #1e9cd7;
+  color: #2a2a2a;
+}
+
+textarea {
+  padding: 14px;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+}
+
+select {
+  width: 200px;
+  height: 20px;
+}
+
+.go-button {
+  width: 130px;
+  height: 50px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: transparent;
+  border: none;
+  background: rgb(30, 156, 215);
+  background: linear-gradient(
+    90deg,
+    rgba(30, 156, 215, 1) 0%,
+    rgba(0, 91, 151, 1) 100%
+  );
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,48 @@
+@import "./base.css";
+
+body,
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+body {
+  gap: 32px;
+  height: 100vh;
+}
+
+#logo {
+  width: 400px;
+}
+
+#searched-city {
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  border-radius: 12px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #1e9cd7;
+  color: #2a2a2a;
+}
+
+#go-button {
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: transparent;
+  border: none;
+  background: rgb(30, 156, 215);
+  background: linear-gradient(
+    90deg,
+    rgba(30, 156, 215, 1) 0%,
+    rgba(0, 91, 151, 1) 100%
+  );
+  color: white;
+  cursor: pointer;
+}

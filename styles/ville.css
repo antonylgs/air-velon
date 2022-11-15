@@ -1,0 +1,71 @@
+@import "./base.css";
+@import "./navbar.css";
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2 {
+  color: rgba(0, 91, 151, 1);
+}
+
+h1 {
+  margin: 20px;
+}
+
+main {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.logement {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.superhote {
+  text-transform: uppercase;
+  position: absolute;
+  color: white;
+  font-size: 12px;
+  top: 10px;
+  left: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background: rgb(30, 156, 215);
+  background: linear-gradient(
+    90deg,
+    rgba(30, 156, 215, 1) 0%,
+    rgba(0, 91, 151, 1) 100%
+  );
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.logement-image {
+  width: 300px;
+  border-radius: 12px;
+}
+
+.note {
+  color: rgb(30, 156, 215);
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: #2a2a2a;
+}
